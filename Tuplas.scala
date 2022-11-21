@@ -11,16 +11,16 @@ val equipoft: List[(String,  Int)] = List(
 ("Jonathan Borja", 11))
 
 def promedio (Lst: List[(String, Int)]) = 
-  (Lst.map(_._3).sum * 100) / Lst.map(_._5).sum.toDouble
+  (Lst.map(_._2).sum * 100) / Lst.map(_._1).sum.toDouble
   print(promedio(equipoft))
 
 
 def masgl1(Lst: List[(String, Int)])=
-  Lst.filter(a => a._5 == Lst.map(_._5).max).map{ case (x, _, _) => x}
+  Lst.filter(a => a._1 == Lst.map(_._1).max).map{ case (x, _, _) => x}
   print(masgl1(equipoft))
 
 def masgl2 (Lst: List[(String, Int)]) = 
-  lst.filter(a => a._5 > 16).map { case (int, -, -,gl) => (int, gl)}.sorted
+  lst.filter(a => a._2 > 16).map { case (int, -, -,gl) => (int, gl)}.sorted
   print(masgl2(equipoft))
 
 
