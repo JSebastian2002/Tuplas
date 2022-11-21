@@ -11,7 +11,7 @@ val equipoft: List[(String,  Int)] = List(
 ("Jonathan Borja", 11))
 
 def promedio (Lst: List[(String, Int)]) = 
-  (Lst.map(_._2).sum * 100) / Lst.map(_._1).sum.toDouble
+  (Lst.map(_._2).sum * 100) / Lst.map(_._2).sum.toDouble
   print(promedio(equipoft))
 
 
